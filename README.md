@@ -3,6 +3,8 @@ As of 2026-08-11, other exploits for GhostLock don't work on S26. This repo util
 
 Dirty-pipe like method can easily bypass samsung DEFEX/KDP and doesn't rely on ashmem. It is suitable for 6.12 kernel Galaxy devices (Galaxy S26 series).
 
+All done via kernelsnitch'ed address or linearmap. KASLR bypass is not needed at all.
+
 Currently only supports the following device.
 
 | Payload | Compatible models | Kernel version | Status |
@@ -49,15 +51,15 @@ $ adb shell env LD_PRELOAD=/data/local/tmp/preload.so sh
 Then, install KernelSU Manager.
 
 # Flow
-1. Leak kaslr by tracefs
-2. Disable selinux by vuln
-3. Modify pipe flag by vuln (add `can_merge` flag)
-4. Overwrite readonly file like dirty-pipe
-5. Get root
+1. Disable selinux by vuln
+2. Modify pipe flag by vuln (add `can_merge` flag)
+3. Overwrite readonly file like dirty-pipe
+4. Get root
 
 # Acknowledgments
 - [Nebula Security](https://github.com/NebuSec/CyberMeowfia): Vulnerability and original exploit
 - [@JoinChang](https://github.com/JoinChang/ghostlock-oneplus): Idea for disabling selinux
 - [@BuSung-dev](https://github.com/BuSung-dev/Root-My-Galaxy): Idea for bypassing security of Samsung DEFEX/KDP and good documentation for porting
 - [@veritas501](https://github.com/veritas501/pipe-primitive): Idea for triggering dirty-pipe like behavior from kernel memory corruption
+- [@lukasmaar](https://github.com/lukasmaar/kernelsnitch): This exploit is heavily dependent on kernelsnitch
 
