@@ -54,6 +54,8 @@ $ adb shell env LD_PRELOAD=/data/local/tmp/preload.so sh
 ```
 Then, install KernelSU Manager.
 
+See [run.log](https://github.com/polygraphene/CyberMeowfia/blob/main/run.log) for full log.
+
 logcat should include logs like the followings if succeeded.
 ```
 $ logcat | grep GHOSTLOCK
