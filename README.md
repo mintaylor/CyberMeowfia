@@ -66,6 +66,14 @@ $ logcat | grep GHOSTLOCK
 3. Overwrite readonly file like dirty-pipe
 4. Get root
 
+## Modified App (Root-My-Galaxy 0.2.6-s26)
+
+A modified build of [Root-My-Galaxy](https://github.com/BuSung-dev/Root-My-Galaxy) (`0.2.6-s26`, versionCode 13, based on upstream v0.2.6) is released in the repo root as `Root-My-Galaxy_v0.2.6-s26-release.apk`. The APK bundles the m3q payload (`preload.so` + `ksud`) for one-tap temporary root inside the app via Shizuku — no manual ADB commands are needed during install (Shizuku still requires a one-time ADB start, or wireless activation via Shizuku Manager). Custom payloads can be picked locally (Settings → Advanced → "Use local payload"), and SELinux enforcing can be viewed/toggled from the Settings page.
+
+Usage: install the APK and start Shizuku → tap the "Bundled payload" card → select `m3q-S9480ZCS4AZG1` → confirm → wait for "KernelSU enabled".
+
+> **Note**: Shizuku mode is required; root only lasts for the current boot (re-install after reboot); only the m3q (SM-S9480, CN) payload is bundled; **success rate is unknown** — verified only on the author's own device.
+
 # Acknowledgments
 
 - [Nebula Security](https://github.com/NebuSec/CyberMeowfia): Vulnerability and original exploit
